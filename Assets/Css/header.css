@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #F3E8DC !important;
+}
+
+.header__edit {
+    width: 100%;
+    position: relative;
+}
+
+.header__edit img.img-fluid {
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: crosshair;
+
+    transition: all ease-in-out .5s;
+}
+
+.header__edit img.img-fluid:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 700.98px) {
+    .header__edit .lead {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .header__edit .lead {
+        font-size: 16px;
+    }
+}

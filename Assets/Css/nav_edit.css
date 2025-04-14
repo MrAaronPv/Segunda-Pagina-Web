@@ -1,0 +1,136 @@
+.header__edit h1 {
+  font-size: 5.5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  background-image: linear-gradient(to right, #252625, #F2E8DC);
+  background-clip: text;
+  color: transparent;
+  cursor: crosshair;
+}
+
+.nav__edit {
+  z-index: 10;
+  background-color: #252625;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 25px;
+  position: sticky;
+  top: 0;
+}
+@media (max-width: 740px) {
+  .nav__edit {
+    padding: 15px;
+    position: static;
+  }
+}
+@media (max-width: 575.98px) {
+  .nav__edit {
+    padding: 5px;
+  }
+}
+.nav__edit .ul__edit___nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 740px) {
+  .nav__edit .ul__edit___nav {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+}
+.nav__edit .ul__edit___nav a {
+  transition: all ease-in-out 0.5s;
+}
+.nav__edit .ul__edit___nav a:hover {
+  transform: scale(1.1);
+}
+.nav__edit .ul__edit___nav .ul__li__nav__logo {
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (max-width: 740px) {
+  .nav__edit .ul__edit___nav .ul__li__nav__logo {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.nav__edit .ul__edit___nav .ul__li__nav__logo img {
+  width: 50px;
+  border-radius: 50%;
+  cursor: crosshair;
+  transition: all ease-in-out 0.5s;
+}
+.nav__edit .ul__edit___nav .ul__li__nav__logo img:hover {
+  transform: scale(1.1);
+}
+.nav__edit .ul__edit___nav .ul__li__nav__logo .ul__li__logo a {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #fff;
+  text-decoration: none;
+}
+.nav__edit .ul__edit___nav .ul__li__nav__logo .ul__li__logo a:hover {
+  transform: scale(1.1);
+  color: #bbb;
+}
+@media (max-width: 740px) {
+  .nav__edit .ul__edit___nav .ul__li__nav__logo .ul__li__logo {
+    margin-bottom: 14px;
+  }
+}
+@media (max-width: 575.98px) {
+  .nav__edit .ul__edit___nav .ul__li__nav__logo .ul__li__logo {
+    margin-bottom: 10px;
+  }
+}
+.nav__edit .ul__edit___nav .ul__li__edit__nav a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+.nav__edit .ul__edit___nav .ul__li__edit__nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+.nav__edit .ul__edit___nav .ul__li__edit__nav a:hover::after {
+  width: 100%;
+}
+@media (max-width: 740px) {
+  .nav__edit .ul__edit___nav .ul__li__edit__nav a {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 740px) {
+  .nav__edit .ul__edit___nav .ul__li__edit__nav:first-of-type a {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 740px) {
+  .header__edit h1 {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .header__edit h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/*# sourceMappingURL=nav_edit.css.map */

@@ -1,0 +1,95 @@
+.aboutUs__edit h2, .whyus__edit .div__1 h2 {
+  font-size: 3.1rem;
+  text-transform: uppercase;
+  color: #252625;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  cursor: crosshair;
+}
+
+.aboutUs__edit img, .whyus__edit .div__1 img {
+  transition: ease-in-out 0.5s;
+  cursor: crosshair;
+}
+.aboutUs__edit img:hover, .whyus__edit .div__1 img:hover {
+  transform: scale(1.1);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #F3E8DC !important;
+}
+
+.footer__edit {
+  background-color: #252625;
+  border-radius: 50px 50px 0 0;
+}
+.footer__edit .footer__edit__ul {
+  margin: 0;
+  padding: 0;
+}
+.footer__edit .footer__edit__ul h4 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.footer__edit .footer__edit__ul .footer__edit__ul__li {
+  list-style: none;
+}
+.footer__edit .footer__edit__ul .footer__edit__ul__li a {
+  font-size: 13px;
+  color: #999;
+  text-decoration: none;
+  display: inline-block;
+  transition: all;
+}
+.footer__edit .footer__edit__ul .footer__edit__ul__li a i {
+  margin-right: 15px;
+}
+.footer__edit .footer__edit__ul .footer__edit__ul__li a:hover {
+  color: #fff;
+  transform: scaleX(1.1) !important;
+}
+@media (max-width: 575.98px) {
+  .footer__edit .footer__edit__ul {
+    text-align: center;
+  }
+}
+.footer__edit hr {
+  margin: 2vw 0;
+  color: #fff;
+}
+.footer__edit .footer__edit__last_div {
+  font-size: 13px;
+  padding-bottom: 2vw;
+  color: #999;
+  text-align: center;
+}
+
+.aboutUs__edit .container__about {
+  padding: 3vw 8vw !important;
+}
+.aboutUs__edit img {
+  width: 900px;
+  object-fit: cover;
+}
+
+.whyus__edit {
+  width: 100%;
+  background-color: #fff;
+  padding: 3vw 8vw !important;
+}
+.whyus__edit .div__1 {
+  padding: 0 200px;
+  text-align: start;
+}
+.whyus__edit .div__1 img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=main.css.map */

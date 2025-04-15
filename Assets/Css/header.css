@@ -1,13 +1,3 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: sans-serif;
-    background-color: #F3E8DC !important;
-}
-
 .header__edit {
     width: 100%;
     position: relative;
@@ -19,6 +9,11 @@ body {
     cursor: crosshair;
 
     transition: all ease-in-out .5s;
+}
+
+.header__edit .btn-outline-dark {
+    text-align: start;
+    cursor: crosshair !important;
 }
 
 .header__edit img.img-fluid:hover {

@@ -75,11 +75,12 @@ body {
 .whyus__edit {
     width: 100%;
     background-color: #fff;
-    padding: 3vw 8vw !important;
+    padding: 4vw 0vw;
     
     .div__1 {
-        padding: 0 200px;
         text-align: start;
+        padding: 3vw 8vw;
+        padding-bottom: 1vw;
         h2 {
             @extend %font-subtittle;
         }
@@ -91,6 +92,86 @@ body {
         }
     }
     .div__2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @media (max-width: 575.98px) {
+            display: inline-block;
+        }
+        div {
+            padding: 3vw;
+            .fs__p {
+                font-size: 14px;
+            }
+            .i__edit__us {
+                font-size: 5rem;
+                opacity: 0;
+                transform: translateY(50px);
+                transition: all 1.5s ease;
+
+                @extend %crooshair-effect;
+            }
+            @media (max-width: 575.98px) {
+                text-align: center;
+            }
+
+            .i__edit__us.show {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+}
+
+.our__working__edit {
+    padding: 5vw 8vw;
+    h2 {
+        text-align: center;
+        @extend %font-subtittle;
+    }
+    .video__container {
+        width: 100%;
+        padding: 3vw;
+    }
+
+    .div__working1 {
+        padding: 3vw 8vw;
+        .div__working1__txt {
+            margin-right: 10vw;
+
+            @media (max-width: 575.98px) {
+                margin-right: 0;
+            }
+        }
+        .div__working1__img {
+            img {
+                width: 35vw;
+                object-fit: cover;
+                overflow: hidden;
+                position: relative;
+
+                cursor: crosshair;
+
+                
+                @media (max-width: 575.98px) {
+                    margin: 14vw 0 10vw 0;
+                    width: 80vw;
+                }
+            }
+        }
         
+        .link-custom {
+            font-size: 14px;
+            border: 1px solid $color-6;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: $color-6;
+            color: #f3f3f3;
+            text-decoration: none;
+        }
+        svg {
+            color: #f3f3f3;
+        }
     }
 }

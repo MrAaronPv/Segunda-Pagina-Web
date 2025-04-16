@@ -1,4 +1,4 @@
-.aboutUs__edit h2, .whyus__edit .div__1 h2 {
+.aboutUs__edit h2, .whyus__edit .div__1 h2, .our__working__edit h2 {
   font-size: 3.1rem;
   text-transform: uppercase;
   color: #252625;
@@ -7,11 +7,11 @@
   cursor: crosshair;
 }
 
-.aboutUs__edit img, .whyus__edit .div__1 img {
+.aboutUs__edit img, .whyus__edit .div__1 img, .whyus__edit .div__2 div .i__edit__us {
   transition: ease-in-out 0.5s;
   cursor: crosshair;
 }
-.aboutUs__edit img:hover, .whyus__edit .div__1 img:hover {
+.aboutUs__edit img:hover, .whyus__edit .div__1 img:hover, .whyus__edit .div__2 div .i__edit__us:hover {
   transform: scale(1.1);
 }
 
@@ -81,15 +81,94 @@ body {
 .whyus__edit {
   width: 100%;
   background-color: #fff;
-  padding: 3vw 8vw !important;
+  padding: 4vw 0vw;
 }
 .whyus__edit .div__1 {
-  padding: 0 200px;
   text-align: start;
+  padding: 3vw 8vw;
+  padding-bottom: 1vw;
 }
 .whyus__edit .div__1 img {
   width: 100px;
   border-radius: 50%;
+}
+.whyus__edit .div__2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 575.98px) {
+  .whyus__edit .div__2 {
+    display: inline-block;
+  }
+}
+.whyus__edit .div__2 div {
+  padding: 3vw;
+}
+.whyus__edit .div__2 div .fs__p {
+  font-size: 14px;
+}
+.whyus__edit .div__2 div .i__edit__us {
+  font-size: 5rem;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1.5s ease;
+}
+@media (max-width: 575.98px) {
+  .whyus__edit .div__2 div {
+    text-align: center;
+  }
+}
+.whyus__edit .div__2 div .i__edit__us.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.our__working__edit {
+  padding: 5vw 8vw;
+}
+.our__working__edit h2 {
+  text-align: center;
+}
+.our__working__edit .video__container {
+  width: 100%;
+  padding: 3vw;
+}
+.our__working__edit .div__working1 {
+  padding: 3vw 8vw;
+}
+.our__working__edit .div__working1 .div__working1__txt {
+  margin-right: 10vw;
+}
+@media (max-width: 575.98px) {
+  .our__working__edit .div__working1 .div__working1__txt {
+    margin-right: 0;
+  }
+}
+.our__working__edit .div__working1 .div__working1__img img {
+  width: 35vw;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  cursor: crosshair;
+}
+@media (max-width: 575.98px) {
+  .our__working__edit .div__working1 .div__working1__img img {
+    margin: 14vw 0 10vw 0;
+    width: 80vw;
+  }
+}
+.our__working__edit .div__working1 .link-custom {
+  font-size: 14px;
+  border: 1px solid #252625;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #252625;
+  color: #f3f3f3;
+  text-decoration: none;
+}
+.our__working__edit .div__working1 svg {
+  color: #f3f3f3;
 }
 
 /*# sourceMappingURL=main.css.map */

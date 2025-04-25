@@ -1,4 +1,20 @@
-.aboutUs__edit h2, .whyus__edit .div__1 h2, .our__working__edit h2 {
+.steps__map__edit h1 {
+  font-size: 5.5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  background-image: linear-gradient(to right, #252625, #F2E8DC);
+  background-clip: text;
+  color: transparent;
+  cursor: crosshair;
+}
+@media (max-width: 575.98px) {
+  .steps__map__edit h1 {
+    font-size: 3.8rem;
+  }
+}
+
+.aboutUs__edit h2, .whyus__edit .div__1 h2, .our__working__edit h2, .steps__map__edit h2 {
   font-size: 3.1rem;
   text-transform: uppercase;
   color: #252625;
@@ -6,12 +22,17 @@
   letter-spacing: 3px;
   cursor: crosshair;
 }
+@media (max-width: 575.98px) {
+  .aboutUs__edit h2, .whyus__edit .div__1 h2, .our__working__edit h2, .steps__map__edit h2 {
+    font-size: 2.5rem;
+  }
+}
 
-.aboutUs__edit img, .whyus__edit .div__1 img, .whyus__edit .div__2 div .i__edit__us {
+.aboutUs__edit img, .whyus__edit .div__1 img, .whyus__edit .div__2 div .i__edit__us, .steps__map__edit .steps__map__divs a, .steps__map__edit .steps__map__divs i {
   transition: ease-in-out 0.5s;
   cursor: crosshair;
 }
-.aboutUs__edit img:hover, .whyus__edit .div__1 img:hover, .whyus__edit .div__2 div .i__edit__us:hover {
+.aboutUs__edit img:hover, .whyus__edit .div__1 img:hover, .whyus__edit .div__2 div .i__edit__us:hover, .steps__map__edit .steps__map__divs a:hover, .steps__map__edit .steps__map__divs i:hover {
   transform: scale(1.1);
 }
 
@@ -145,6 +166,9 @@ body {
     margin-right: 0;
   }
 }
+.our__working__edit .div__working1 .div__working1__img {
+  transition: all 0.5s ease-in-out;
+}
 .our__working__edit .div__working1 .div__working1__img img {
   width: 35vw;
   object-fit: cover;
@@ -158,6 +182,9 @@ body {
     width: 80vw;
   }
 }
+.our__working__edit .div__working1 .div__working1__img:hover {
+  transform: scale(0.9);
+}
 .our__working__edit .div__working1 .link-custom {
   font-size: 14px;
   border: 1px solid #252625;
@@ -169,6 +196,68 @@ body {
 }
 .our__working__edit .div__working1 svg {
   color: #f3f3f3;
+}
+
+.steps__map__edit {
+  width: 100%;
+}
+.steps__map__edit h1 {
+  text-align: center;
+}
+.steps__map__edit h2 {
+  text-align: start;
+}
+.steps__map__edit .steps__map__divs {
+  text-align: center;
+}
+.steps__map__edit .steps__map__divs a {
+  font-size: 12px;
+}
+.steps__map__edit .steps__map__divs a .fa-solid {
+  font-size: 12px;
+}
+.steps__map__edit .steps__map__divs .fa-shoe-prints, .steps__map__edit .steps__map__divs .fa-location-dot {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.steps__map__edit .steps__map__divs i {
+  font-size: 3rem;
+}
+.steps__map__edit .steps__map__divs .div__steps__map {
+  width: 100%;
+  height: 20vw;
+}
+@media (max-width: 597.56px) {
+  .steps__map__edit .steps__map__divs .div__steps__map {
+    height: 5vw;
+  }
+}
+@media (max-width: 597.56px) {
+  .steps__map__edit .steps__map__divs .steps__map {
+    display: none;
+  }
+}
+.steps__map__edit .steps__map__divs .steps__map i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  padding: 3.5vw 0;
+  rotate: 90deg;
+}
+@media (max-width: 597.56px) {
+  .steps__map__edit .steps__map__divs .steps__map i {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 597.75px) {
+  .steps__map__edit .steps__map__divs .steps__col3 .desapera__display, .steps__map__edit .steps__map__divs .steps__col1 .desapera__display {
+    display: none;
+  }
+}
+@media (max-width: 597.56px) {
+  .steps__map__edit .steps__map__divs {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

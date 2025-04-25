@@ -1,9 +1,12 @@
 const icons = document.querySelectorAll('.i__edit__us');
 
 const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
+    entries.forEach((entry, index) => {
         if(entry.isIntersecting) {
-            entry.target.classList.add("show");
+            setTimeout(() => {
+                entry.target.classList.add("show");
+            }, index * 250)
+            
             observer.unobserve(entry.target);
         }
     });

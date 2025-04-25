@@ -11,6 +11,10 @@
     color: transparent;
     
     cursor: crosshair;
+
+    @media (max-width: 575.98px) {
+        font-size: 3.8rem;
+    }
 }
 
 %font-subtittle {
@@ -21,6 +25,10 @@
     letter-spacing: 3px;
 
     cursor: crosshair;
+
+    @media (max-width: 575.98px) {
+        font-size: 2.5rem;
+    }
 }
 
 %crooshair-effect {

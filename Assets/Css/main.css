@@ -1,4 +1,4 @@
-.steps__map__edit h1 {
+.gif__map-edit h1 {
   font-size: 5.5rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-transform: uppercase;
@@ -9,12 +9,12 @@
   cursor: crosshair;
 }
 @media (max-width: 575.98px) {
-  .steps__map__edit h1 {
+  .gif__map-edit h1 {
     font-size: 3.8rem;
   }
 }
 
-.aboutUs__edit h2, .whyus__edit .div__1 h2, .our__working__edit h2, .steps__map__edit h2 {
+.aboutUs__edit h2, .whyus__edit .div__1 h2, .our__working__edit h2, .resources__edit h2, .local__edit h2, .formulario__edit h2, .socialMedia__edit h2 {
   font-size: 3.1rem;
   text-transform: uppercase;
   color: #252625;
@@ -23,16 +23,16 @@
   cursor: crosshair;
 }
 @media (max-width: 575.98px) {
-  .aboutUs__edit h2, .whyus__edit .div__1 h2, .our__working__edit h2, .steps__map__edit h2 {
+  .aboutUs__edit h2, .whyus__edit .div__1 h2, .our__working__edit h2, .resources__edit h2, .local__edit h2, .formulario__edit h2, .socialMedia__edit h2 {
     font-size: 2.5rem;
   }
 }
 
-.aboutUs__edit img, .whyus__edit .div__1 img, .whyus__edit .div__2 div .i__edit__us, .steps__map__edit .steps__map__divs a, .steps__map__edit .steps__map__divs i {
+.aboutUs__edit .container__about .img__about img, .whyus__edit .div__1 img, .whyus__edit .div__2 div .i__edit__us, .resources__edit .div__i i, .socialMedia__edit .socialMedia__div__edits a i {
   transition: ease-in-out 0.5s;
   cursor: crosshair;
 }
-.aboutUs__edit img:hover, .whyus__edit .div__1 img:hover, .whyus__edit .div__2 div .i__edit__us:hover, .steps__map__edit .steps__map__divs a:hover, .steps__map__edit .steps__map__divs i:hover {
+.aboutUs__edit .container__about .img__about img:hover, .whyus__edit .div__1 img:hover, .whyus__edit .div__2 div .i__edit__us:hover, .resources__edit .div__i i:hover, .socialMedia__edit .socialMedia__div__edits a i:hover {
   transform: scale(1.1);
 }
 
@@ -91,12 +91,26 @@ body {
   text-align: center;
 }
 
-.aboutUs__edit .container__about {
-  padding: 3vw 8vw !important;
+.aboutUs__edit {
+  width: 100%;
 }
-.aboutUs__edit img {
-  width: 900px;
+.aboutUs__edit .container__about {
+  width: 100%;
+  padding: 3vw 8vw;
+}
+.aboutUs__edit .container__about .img__about {
+  margin: auto;
+  width: 600px;
+  overflow: hidden;
   object-fit: cover;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.aboutUs__edit .container__about .img__about img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  cursor: crosshair;
 }
 
 .whyus__edit {
@@ -145,47 +159,44 @@ body {
   transform: translateY(0);
 }
 
-.our__working__edit {
-  padding: 5vw 8vw;
-}
 .our__working__edit h2 {
   text-align: center;
 }
+.our__working__edit .txt__subtittle__working {
+  padding: 5vw;
+}
 .our__working__edit .video__container {
   width: 100%;
-  padding: 3vw;
 }
-.our__working__edit .div__working1 {
-  padding: 3vw 8vw;
+.our__working__edit .video__container video {
+  width: 100%;
 }
-.our__working__edit .div__working1 .div__working1__txt {
-  margin-right: 10vw;
+
+.resources__edit {
+  padding-bottom: 30px;
 }
-@media (max-width: 575.98px) {
-  .our__working__edit .div__working1 .div__working1__txt {
-    margin-right: 0;
-  }
+.resources__edit h2 {
+  text-align: center;
 }
-.our__working__edit .div__working1 .div__working1__img {
-  transition: all 0.5s ease-in-out;
+.resources__edit hr {
+  margin: 0.5vw 0;
 }
-.our__working__edit .div__working1 .div__working1__img img {
-  width: 35vw;
-  object-fit: cover;
-  overflow: hidden;
-  position: relative;
-  cursor: crosshair;
+.resources__edit .div__resources {
+  padding: 5vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
 }
 @media (max-width: 575.98px) {
-  .our__working__edit .div__working1 .div__working1__img img {
-    margin: 14vw 0 10vw 0;
-    width: 80vw;
+  .resources__edit .div__resources {
+    padding: 18px;
   }
 }
-.our__working__edit .div__working1 .div__working1__img:hover {
-  transform: scale(0.9);
+@media (max-width: 575.98px) {
+  .resources__edit .div__resources__edit {
+    padding: 18px;
+  }
 }
-.our__working__edit .div__working1 .link-custom {
+.resources__edit .link-custom {
   font-size: 14px;
   border: 1px solid #252625;
   border-radius: 5px;
@@ -194,70 +205,132 @@ body {
   color: #f3f3f3;
   text-decoration: none;
 }
-.our__working__edit .div__working1 svg {
+.resources__edit svg {
+  margin-left: 20px;
+  font-size: 25px;
   color: #f3f3f3;
 }
+.resources__edit .div__i i {
+  color: #333;
+  font-size: 6em;
+}
 
-.steps__map__edit {
+.local__edit {
   width: 100%;
 }
-.steps__map__edit h1 {
+.local__edit h2 {
   text-align: center;
 }
-.steps__map__edit h2 {
+.local__edit .div__locales {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 675.98px) {
+  .local__edit .div__locales {
+    display: inline-block;
+  }
+}
+.local__edit .div__locales .div__local-1 {
+  width: 40%;
+  padding: 20px;
+  padding-left: 5vw;
+}
+@media (max-width: 675.98px) {
+  .local__edit .div__locales .div__local-1 {
+    width: 100%;
+  }
+}
+.local__edit .div__locales .div__local-1 select, .local__edit .div__locales .div__local-1 button, .local__edit .div__locales .div__local-1 option {
+  font-weight: lighter;
+  text-align: start;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  display: block;
+  border-radius: 10px;
+  background-color: #998783;
+  color: #f3f3f3;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+.local__edit .div__locales .div__local-1 select:focus {
+  border: none;
+}
+.local__edit .div__locales .div__local-1 button:hover {
+  background-color: #CEBCB2;
+  color: #1E1826;
+  font-size: 16px;
+}
+.local__edit .div__locales .div__local-2 {
+  width: 60%;
+  padding: 20px;
+}
+@media (max-width: 675.98px) {
+  .local__edit .div__locales .div__local-2 {
+    width: 100%;
+  }
+}
+.local__edit .div__locales .div__local-2 iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.formulario__edit .form__edit {
+  padding: 1vw 20vw;
+}
+.formulario__edit .form__edit .div__edit-form {
+  display: block;
+  padding: 10px 0;
+}
+.formulario__edit .form__edit .div__edit-form label {
+  font-weight: normal;
+  font-size: 12px;
+  color: #333;
+}
+.formulario__edit .form__edit .div__edit-form input, .formulario__edit .form__edit .div__edit-form textarea {
+  font-size: 15px;
+  background-color: #fff;
+}
+.formulario__edit .form__edit .div__edit-form input, .formulario__edit .form__edit .div__edit-form textarea, .formulario__edit .form__edit .div__edit-form button {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #a4a3a3;
+}
+.formulario__edit .form__edit .div__edit-form input:focus, .formulario__edit .form__edit .div__edit-form textarea:focus {
+  outline: none;
+}
+.formulario__edit .form__edit .div__edit-form input, .formulario__edit .form__edit .div__edit-form button {
+  border-radius: 0 50px 50px 0;
+}
+.formulario__edit .form__edit .div__edit-form button {
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  font-weight: lighter;
+  letter-spacing: 2px;
   text-align: start;
 }
-.steps__map__edit .steps__map__divs {
-  text-align: center;
+.formulario__edit .form__edit .div__edit-form button:hover {
+  background-color: #fff;
+  color: #333;
 }
-.steps__map__edit .steps__map__divs a {
-  font-size: 12px;
+
+.socialMedia__edit {
+  padding: 5vw 20vw;
 }
-.steps__map__edit .steps__map__divs a .fa-solid {
-  font-size: 12px;
+.socialMedia__edit .socialMedia__div__edits h4 {
+  font-size: 1.8rem;
 }
-.steps__map__edit .steps__map__divs .fa-shoe-prints, .steps__map__edit .steps__map__divs .fa-location-dot {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+.socialMedia__edit .socialMedia__div__edits a {
+  font-size: 5rem;
+  color: #1E1826;
 }
-.steps__map__edit .steps__map__divs i {
-  font-size: 3rem;
-}
-.steps__map__edit .steps__map__divs .div__steps__map {
-  width: 100%;
-  height: 20vw;
-}
-@media (max-width: 597.56px) {
-  .steps__map__edit .steps__map__divs .div__steps__map {
-    height: 5vw;
-  }
-}
-@media (max-width: 597.56px) {
-  .steps__map__edit .steps__map__divs .steps__map {
-    display: none;
-  }
-}
-.steps__map__edit .steps__map__divs .steps__map i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3.5rem;
-  padding: 3.5vw 0;
-  rotate: 90deg;
-}
-@media (max-width: 597.56px) {
-  .steps__map__edit .steps__map__divs .steps__map i {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 597.75px) {
-  .steps__map__edit .steps__map__divs .steps__col3 .desapera__display, .steps__map__edit .steps__map__divs .steps__col1 .desapera__display {
-    display: none;
-  }
-}
-@media (max-width: 597.56px) {
-  .steps__map__edit .steps__map__divs {
-    display: block;
-  }
+.socialMedia__edit .socialMedia__div__edits a i {
+  color: #333;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -8,6 +8,9 @@
     <!-- Style CSS  -->
     <link rel="stylesheet" href="../Assets/Css/nav_edit.css">
     <link rel="stylesheet" href="../Assets/Css/main.css">
+
+    <!-- Scripts -->
+    <script src="../scripts-js/ourLocal.js"></script>
     
     <!-- Script FontAwesome -->
     <script src="https://kit.fontawesome.com/c75f29b3f2.js" crossorigin="anonymous"></script>
@@ -36,104 +39,41 @@
     <!-- Nav End -->
 
 
-    <!-- Setps to Map  -->
-    <section class="steps__map__edit container pt-3">
-        <div class="container p-3">
-            <h2>Sigue los pasos</h2>
+    <!-- Local -->
+    <section class="local__edit">
+        <div class="p-4">
+            <h2>Visitanos en Nuestro local:</h2>
             <hr>
         </div>
-        <div class="row steps__map__divs p-3">
-            <div class="col steps__col1">
-                <h3 class="fw-lighter">Ven a vivir la experiencia en persona</h3>
+        <div class="div__locales">
+            <div class="div__local-1">
+                <p class="fw-lighter fs-4">Selecciona un Local:</p>
+                <select name="locales" id="localesOption">
+                    <option value="molina">Local - La Molina</option>
+                    <option value="sanIsidro">Local - San Isidro</option>
+                    <option value="SanBorja">Local - San Borja</option>
+                    <option value="surco">Local - Surco</option>
+                </select>
                 <br>
-                <span class="fw-lighter">Visítanos y haz que tu día cuente</span>
-                <div class="div__steps__map">
-                    <!-- Espaciado con un div -->
-                </div>
-                <div class="desapera__display">
-                    <i class="fa-solid fa-mug-hot"></i>
-                    <br>
-                    <br>
-                    <span class="fw-lighter">No importa desde dónde vengas, llegas directo a lo bueno.</span>
-                </div>
-                <div class="div__steps__map">
-                    <!-- Espaciado con un div -->
-                </div>
-                <div class="desapera__display">
-                    <span>Un paso más cerca de lo que te gusta.</span>
-                    <br>
-                <br>
-                <i class="fa-solid fa-face-laugh-wink"></i>
-                </div>
-                <div class="div__steps__map">
-                    <!-- Espaciado con un div -->
-                </div>
-                <h3 class="fw-lighter">Ubícanos fácilmente y acércate cuando gustes</h3>
-                <br>
-                <div class="d-grid gap-2">
-                    <a class="btn btn-outline-dark" href="https://maps.app.goo.gl/ik7T2yQEAxM5o8HfA" target="_blank">Visita - Local del
-                        Norte <i class="fa-solid fa-location-dot"></i></a>
-                </div>
+                <button onclick="showLocals(); showLocalsMap()">Seleccionar Local</button>
             </div>
-            <div class="steps__map col">
-                <i class="fa-solid fa-shoe-prints"></i>
-                <i class="fa-solid fa-shoe-prints"></i>
-                <i class="fa-solid fa-shoe-prints"></i>
-                <i class="fa-solid fa-shoe-prints"></i>
-                <i class="fa-solid fa-shoe-prints"></i>
-                <i class="fa-solid fa-shoe-prints"></i>
-                <i class="fa-solid fa-shoe-prints"></i>
-                <i class="fa-solid fa-shoe-prints"></i>
-                <i class="fa-solid fa-shoe-prints"></i>
-                <i class="fa-solid fa-shoe-prints"></i>
-                <i class="fa-solid fa-shoe-prints"></i>
-            </div>
-            <div class="col steps__col3">
-                <div class="div__steps__map">
-                    <!-- Espaciado con un div -->
-                </div>
-                <div class="desapera__display">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <br>
-                    <br>
-                    <span class="fw-lighter">Un lugar, mil experiencias.</span>
-                </div>
-                <div class="div__steps__map">
-                    <!-- Espaciado con un div -->
-                </div>
-                <h3 class="fw-lighter">Ubícanos fácilmente y acércate cuando gustes</h3>
+            <div class="div__local-2">
+                <iframe id="localMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.120817718898!2d-77.03214249999999!3d-12.103880600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c95e7ca48003%3A0xc64478af9c8c969c!2sTaqhuba%20Caf%C3%A9!5e0!3m2!1ses-419!2spe!4v1747089852555!5m2!1ses-419!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <br>
-                <div class="d-grid gap-2">
-                    <a class="btn btn-outline-dark" href="https://maps.app.goo.gl/ik7T2yQEAxM5o8HfA" target="_blank">Visita - Local del Sur
-                        <i class="fa-solid fa-location-dot"></i></a>
-                    <div class="div__steps__map">
-                        <!-- Espaciado con un div -->
-                    </div>
-                    <span>Estamos en el corazón de la ciudad.</span>
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-                <div class="div__steps__map">
-                    <!-- Espaciado con un div -->
-                </div>
-                <div class="desapera__display">
-                    <i class="fa-solid fa-thumbs-up"></i>
-                    <br>
-                    <br>
-                    <span>¡Qué bueno verte! Estás en el lugar correcto para lo que buscas.</span>
-                </div>
+                <p class="text-center fw-lighter fs-3" id="localInfo">Local - La Molina</p>
             </div>
         </div>
-        <hr>
-        <div class="d-flex justify-content-center align-items-center p-4 tittle__edit__div">
-            <h1>¡Bienvenido! El camino hacia lo que buscas comienza aquí.</h1>
-        </div>
-        <hr>
     </section>
-    <!-- Setps to Map End -->
+    <!-- Local Edit -->
 
 
     <!-- Gif Map  -->
-    <section>
+    <section class="gif__map-edit">
+        <div class="text-center gif__h1">
+            <hr>
+            <h1>¡Bienvenido! El camino hacia lo que buscas comienza aquí.</h1>
+            <hr>
+        </div>
         <div class="d-flex justify-content-center align-items-center">
             <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     
@@ -144,7 +84,7 @@
             <p>¡No te pierdas lo mejor! Explora nuestras ofertas exclusivas.</p>
         </div>
         <div class="d-flex justify-content-center mx-auto pb-4 text-center">
-            <a class="a__gif__map btn btn-outline-success" href="/SecondaryPages/OurBrDi.html">Nuestras Ofertas</a>
+            <a class="a__gif__map btn btn-outline-success" href="/SecondaryPages/OurBrDi.html">Ver Más Productos</a>
           </div>
     </section>
     <!-- Gif Map End -->
